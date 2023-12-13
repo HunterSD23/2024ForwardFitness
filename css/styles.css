@@ -14,7 +14,7 @@ font-family: 'Roboto Slab', serif;
 
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,7 +31,6 @@ img {
 }
 
 /* Style rule for box-sizing applies to all elements */
-
 * {
 	box-sizing: border-box;
 }
@@ -93,6 +92,31 @@ main {
 	padding: 2%;
 	font-size: 1.15em;
 	font-family: 'Roboto Slab', serif; 
+}
+
+.mobile h3 {
+	text-shadow: 5px 5px 8px #ccc;
+}
+
+article {
+	padding: 2%;
+}	
+
+article h3 {
+	text-align: center;
+}
+
+article img {
+	margin: 0 auto;
+}
+
+article ul {
+	margin-left: 10%;
+}
+
+article:nth-of-type(2) {
+	background-color: rgba(204,204,204, 0.6);
+	border-radius: 15px;
 }
 
 .tel-link {
@@ -192,10 +216,6 @@ main {
 		margin: 0 0 4% 10%;
 	}
 	
-	.mobile h3 {
-		text-shadow: 5px 5px 8px #ccc;
-	}
-	
 	.grid {
 		display: grid;
 		grid-template-columns: auto auto auto;
@@ -203,8 +223,26 @@ main {
 	}
 	
 	.pic-text {
-		font-size: 1.5em;
+		font-size: 1em;
 		padding: 10px;
+	}
+	
+	
+	
+	aside {
+		text-align: center;
+		font-size: 1.25em;
+		font-style: italic;
+		font-weight: bold;
+		padding: 2%;
+		background-color: rgba(204,204,204, 0.6);
+		box-shadow: 5px 5px 8px #000;
+		text-shadow: 5px 5px 5px #b3b3b3;
+		border-radius: 0 15px
+	}
+	
+	.grid-item4 {
+		grid-column: 1 / span 3;
 	}
 
 	#exercises {
@@ -212,7 +250,7 @@ main {
 		border-top: 1px solid #000;
 		border-bottom: 1px solid #000;
 		background: linear-gradient(to right, #ccc, #fff);
-	/* background-color: #f2f2f2; */
+	 /* background-color: #f2f2f2; */
 		padding: 1% 2%
 	}
 
@@ -291,6 +329,10 @@ main {
 	
 	main h1 {
 		font-size: 1.8em;
+	}
+	
+	article h3 {
+		font-size: 1.75em;
 	}
 	
 	.pic-text {
